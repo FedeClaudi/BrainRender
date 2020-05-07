@@ -691,7 +691,7 @@ class Scene(ABA):  # subclass brain render to have acces to structure trees
 						   alpha=alpha)
 
 		elif filepath.suffix == ".pkl":
-			cells = pd.read_picle(filepath)
+			cells = pd.read_pickle(filepath)
 			self.add_cells(cells, color=color, radius=radius, res=res,
 						   alpha=alpha)
 		else:
